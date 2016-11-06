@@ -1,0 +1,197 @@
+body{
+  position: relative;
+  with: 100vh;
+  height: 100vw;
+  background: #eee;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#game{
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#case{  
+  position: relative;
+  width: 400px;
+  height: 400px;    
+}
+
+#bezel{  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 410px;
+  height: 410px;
+  border: 10px solid #343132; 
+  border-radius: 50%; 
+  z-index: -1;
+}
+
+#green{
+  width: 200px; 
+  height: 200px;
+  background: #03A64B;
+  border: 10px solid #343132;  
+  border-radius: 100% 0 0 0;
+  float: left;
+}
+
+#red{
+  width: 200px; 
+  height: 200px;
+  background: #9C121C;
+  border: 10px solid #343132;   
+  border-radius: 0 100% 0 0;  
+  float: right;
+}
+
+#yellow{
+  width: 200px; 
+  height: 200px;  
+  background: #CBA60C;
+  border: 10px solid #343132; 
+  border-radius: 0 0 0 100%;
+  float: left;
+}
+
+#blue{
+  width: 200px; 
+  height: 200px;  
+  background: #1D8CFF;
+  border: 10px solid #343132;
+  border-radius: 0 0 100% 0;
+  float: right;
+}
+
+#green, #red, #yellow, #blue{
+  cursor: pointer;
+}
+
+#panel{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  background: #eee;
+  border: 10px solid #343132; 
+  border-radius: 50%;
+}
+
+#panel h1{
+  margin-top: 30px;
+  margin-bottom: -3px;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;  
+  color: #343132;
+}
+
+sup{
+  font-size: 0.7em;
+}
+
+#controls{
+  width: 190px;    
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-end;
+}
+
+#counter, #start, #strict{
+  width: 33.3%;
+  text-align: center;
+}
+
+#start-button, #strict-button, #switch-button{
+  cursor: pointer;
+  position: relative;
+}
+
+#counter-display{  
+  width: 60px;
+  height: 40px;
+  margin: 0 auto;
+  background: #32050C;
+  border: 5px solid #343132;
+  border-radius: 10px;  
+}
+
+#counter span{  
+  font-family: 'VT323', monospace;
+  font-size: 32px;  
+  color: #430710;
+}
+
+#start-button{  
+  width: 25px;
+  height: 25px;
+  margin: 7px auto;
+  background: red;
+  border: 4px solid #343132;
+  border-radius: 50%;
+}
+
+#strict-indicator{  
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  background: #430710;
+  border: 4px solid #343132;
+  border-radius: 50%;
+}
+
+#strict-button{  
+  width: 25px;
+  height: 25px;
+  margin: 7px auto;
+  background: yellow;
+  border: 4px solid #343132;
+  border-radius: 50%;
+}
+
+#power{
+  width: 100px;  
+  margin: 10px auto;  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#switch{
+  width: 45px;
+  height: 20px;  
+  margin: 0 5px;
+  background: #343132;  
+  padding: 1px;
+}
+
+#switch-button{   
+  width: 18px;
+  height: 18px;  
+  background: #3193DE;
+  border-radius: 2px;  
+}
